@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Nav-Bar */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    font-size: 16px;
+    transition: 0.3s;
+    color: red;
+}
+
+ul{
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {    
+    color: red;
+    transition: 0.3s; 
+}
+
+
+/* Home */
+
+.home{
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.photo{
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 50%;
+}
+
+.intro{
+    font-size: 30px;
+}
+
+.name{
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.fd{
+    color: red;
+}
+
+.home i{
+    font-size: 35px;
+    color: navy;
+}
+
+.home i:hover{
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+
+/* Projects */
+
+.projects{
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.pro{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.pro .title{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px red;
+    text-align: center;
+    font-size: 35px;
+    cursor: default;
+    padding-bottom: 20px;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 470px;
+    width: 350px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    background-color: black;
+    color: white;
+    transition: 2s;
+}
+
+.proimg{
+    height: 269px;
+    width: 100%;
+}
+
+.card h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.procards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card p{
+    padding-left: 5px;
+}
+
+.card button{
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    font-size: 17px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+}
+
+.card button a{
+    color: black;
+}
+
+
+/* Skills */
+
+.skills{
+    padding: 10px;
+    min-height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5f8ebac2446dda563c059854/1610875952081-WKLB0RN53RKSQKC2P39Y/grid%2Bbackground%2BCHR%2Bweb.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.skills .title{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px red;
+    text-align: center;
+    font-size: 35px;
+    cursor: default;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.skilltype{
+    text-align: center;
+}
+
+.skillcards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skillimg{
+    height: 90px;
+    width: 90px;
+}
+
+.skillimg:hover{
+    height: 110px;
+    width: 110px;
+    transition: 0.2s;
+}
+
+.skillname{
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+
+
+/* About */
+
+.about{
+    padding: 10px;
+    min-height: 80vh;
+    background-color: whitesmoke;
+}
+
+.about .title{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px red;
+    text-align: center;
+    font-size: 35px;
+    cursor: default;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.para{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.pinfo p{
+    padding-left: 10%;
+    padding-bottom: 10px;
+    line-height: 40px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.pinfo span{
+    font-weight: bold;
+}
+
+
+/* Contact */
+
+.contact{
+    padding: 10px;
+    min-height: 50vh;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.contact .title{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px red;
+    text-align: center;
+    font-size: 35px;
+    cursor: default;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.pagecontact{
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.contact{
+   font-size: xx-large;
+   line-height: 60px;
+}
+
+.connect .mail:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.connect .location:hover{
+    cursor: pointer;
+    color: navy;
+}
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 58px;
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span{
+    color: red;
+    cursor: pointer;
+}
+
+
+@media(max-width:848px){
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    ul{
+        gap: 10px;
+        font-size: 14.5px;
+    }
+    .logo{
+        text-align: center;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        padding-top: 55px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .intro{
+        font-size: 20px;
+    }
+
+    .photo{
+        height: 200px;
+        width: 200px;
+    }
+
+    .home i{
+        font-size: 30px;
+    }
+
+    .card{
+        height: 500px;
+        padding-bottom: 10px;
+    }
+
+    .pro .title{
+        font-size: 30px;
+    }
+
+    .proimg{
+        height: 276.3px;
+    }
+
+    .card button{
+        padding: 5px;
+        width: 100px;
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    .skills .title{
+        margin-top: 80px;
+        font-size: 30px;
+    }
+
+    .skillimg{
+        height: 80px;
+        width: 80px;
+    }
+
+    .skilltype{
+        font-size: 16px;
+    }
+
+    .about .title{
+        margin-top: 80px;
+        font-size: 30px;
+    }
+
+    .para{
+        width: 100%;
+        padding: 0;
+        line-height: 1;
+        font-size: large;
+    }
+    
+    .pinfo p{
+        width: 100%;
+        padding: 0;
+        line-height: 1.5;
+        font-size: large;
+    }
+
+    .connect{
+        font-size: 21.6px;
+    }
+
+    .footer{
+        height: 50px;
+        font-size: 11px;
+    }
+}
